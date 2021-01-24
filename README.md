@@ -3,3 +3,7 @@ Will create a Add to Desktop optiion in all Starter files (.desktop). from there
 
 ## Installation 
 Copy both files to the correct location and run /usr/bin/add-to-desktop.sh
+
+```lang-sh
+  sudo unzip popos_add-to-desktop.zip -d /
+```
