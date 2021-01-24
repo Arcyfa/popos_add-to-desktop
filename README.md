@@ -11,4 +11,5 @@ Copy both files to the correct location and run /usr/bin/add-to-desktop.sh
   sudo cp popos_add-to-desktop-main/usr/bin/add-to-desktop.sh /usr/bin/add-to-desktop.sh
   rm -R popos_add-to-desktop-main
   rm add-to-desktop.zip
+  sudo /usr/bin/add-to-desktop.sh
 ```
