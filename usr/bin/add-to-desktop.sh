@@ -1,13 +1,12 @@
 #!/bin/sh
-if [ ${1} = "" ]; then
-	for f in /usr/share/applications/* ; do 
+if [ -z ${1+x} ]
+then
+	for f in /usr/share/applications/*
+	do 
 		if grep -q "Actions=" $f
 		then
-			if grep -q "Add-To-Desktop" $f
+			if ! grep -q "Add-To-Desktop" $f
 			then
-				##echo $f "has Actions. All ready processed"
-			else
-				##echo $f "has Actions"
 				sudo sed -i "s/Actions=/Actions=Add-To-Desktop;/g" $f
 				sudo echo "" | sudo tee -a $f > /dev/null
 				sudo echo "[Desktop Action Add-To-Desktop]" | sudo tee -a $f > /dev/null
