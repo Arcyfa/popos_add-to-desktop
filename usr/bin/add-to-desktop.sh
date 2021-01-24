@@ -25,5 +25,6 @@ then
 else
 	file=$(basename ${1})
 	cp "${1}" "/home/$USER/Desktop/"
-	chmod 755 "/home/$USER/Desktop/$file"
+	chmod a+x "/home/$USER/Desktop/$file"
+	gio set "/home/$USER/Desktop/$file" metadata::trusted true
 fi
