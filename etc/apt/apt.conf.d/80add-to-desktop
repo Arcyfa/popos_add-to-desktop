@@ -1,6 +1,6 @@
 DPkg::Post-Invoke {
-        "echo Updating Starters.; /usr/sbin/add-to-desktop.sh";
+        "echo Updating Starters.; /usr/bin/add-to-desktop.sh";
 };
 APT::update::Post-Invoke {
-        "echo Updating Starters.; /usr/sbin/add-to-desktop.sh";
+        "echo Updating Starters.; /usr/bin/add-to-desktop.sh";
 };
