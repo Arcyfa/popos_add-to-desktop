@@ -1,5 +1,5 @@
 #!/bin/sh
-if [ -z ${1+x} ]
+if [ -z ${1} ]
 then
 	for f in /usr/share/applications/*
 	do 
